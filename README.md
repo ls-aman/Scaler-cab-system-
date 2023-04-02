@@ -16,7 +16,7 @@ Requirements:<br>
 ●	The system should be able to track the cab booking<br>
 ●	Users should be able to view and edit the cabs and their pricing.<br>
 
-Note:
+Note:<br>
 ●	No need to develop login/signup pages, just make an assumption that only admins will be accessing it and just try to cover the basic requirements part with this assumption.<br>
 ●	Create your app’s frontend as a SPA.<br>
 ●	Create a proper ReadME file describing the functioning of your project<br>
