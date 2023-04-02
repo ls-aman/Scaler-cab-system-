@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+    <title>Cab Booking</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+  <body>
+    <!-- <main class="mainclass"> -->
+      <div class="container">
+        <div class="mainhead">
+        <h1 class="head1"><b>Book Your Cab</b></h1>
+          <h3 class="head2">Fill the Details</h3>
+        </div>
+        <form action="/" method="post">
+          <div class="row">
+            <div class="emailrow col">
+              <label class="emaillab" for="email">Enter Your Email</label>
+              <i><input class="form-control top" type="email" name = "email" placeholder="for e.g.: xyz@gmail.com" autofocus></i>
+            </div>
+            </div>
+            <div class="row">
+            <div class="sourcerow col">
+              <label class="sourcelab" for="source">Enter Your Source Location</label>
+              <i><input class="form-control mid" type="text" name = "source" placeholder="for e.g.: Chandigarh Junction " focus></i>
+            </div>
+            </div>
+            <div class="row">
+              <div class="desrow col">
+                <label class="deslab" for="Destination">Enter Your Destination Location</label>
+                <i><input class="form-control last" type="text" name="Destination" placeholder="for e.g. Chandigarh University" focus></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-sm-success" type="submit" name="button">Book Now</button>
+              </div>
+            </div>
+        </form>
+
+
+
+        <h2 class="avacab"><b>Cabs</b></h2>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Source</th>
+          <th scope="col">Destination</th>
+          <th scope="col">Shortest Path</th>
+          <th scope="col">Total Time</th>
+          <th scope="col">Name</th>
+          <th scope="col">Number</th>
+          <th scope="col">Price/minute</th>
+          <th scope="col">Arrival Time</th>
+          <th scope="col">Availability</th>
+          <th scope="col">Total Pricing</th>
+          <th scope="col">Book Now</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <% for(var i = 0; i < 5; i++){ %>
+          <tr class="tr1">
+            <td><%= source %></td>
+            <td><%= destination %></td>
+            <td><%= shortpath %></td>
+            <td><%= totaldist %></td>
+            <td><%= Name[i] %></td>
+            <td><%= Number[i] %></td>
+            <td><%= Pricing[i] %>/min</td>
+            <td><%= Arrival[i] %></td>
+            <td><%= Available[i] %></td>
+            <td>Rs.<b><%= Math.round(Pricing[i]*totaldist) %></b></td>
+            <% if (Available[i]) { %>
+              <td><button id="BTN" class="btn1 btn-sm" onclick ="myfunc()" type="button" name="button">Book</button></td>
+            <% } else {%>
+              <td><button class="btn2 btn-sm" type="button" onclick="myfunc1()" name="button"> Can't Book</button></td>
+              <% } %>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+        <b><footer class="foot">2023 Cab System <i>(@copyright)</i> </footer></b>
+    </div>
+    <script>
+      function myfunc(){
+            alert("Booked Successfully!!");
+      }
+      function myfunc1(){
+        alert("Not Available!!");
+      }
+    </script>
+  </body>
+</html>
