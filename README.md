@@ -6,7 +6,7 @@ Create a web application for a cab system where users can enter the source and d
 ## **2. Requirements:**<br>
 ●	The system should be able to manage cab booking<br>
 ●	The below provided is the time taken between different destinations. For e.g. from A to B the time taken is 5 min, similarly from D to F the time taken is 20 min.<br> 
-![image](https://user-images.githubusercontent.com/70821575/229360940-e0b12ac8-f445-4529-8f53-10d9112bdc59.png)
+![Graph diagram provided by them to initialize ka algorithm](https://user-images.githubusercontent.com/70821575/229360940-e0b12ac8-f445-4529-8f53-10d9112bdc59.png)
 
 ● The user should be able to book a cab by providing the user's email, source, and destination<br>
 ●	The system should be able to calculate the shortest possible time from source to destination. E.g. There are multiple ways from A to D, but the shortest route will be via C.<br>
