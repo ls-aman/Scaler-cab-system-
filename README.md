@@ -41,3 +41,15 @@ npm i express.js ejs nodemon body-parser
 ```
 nodemon app.js
 ```
+## **Snapshots of project:**
+<br>
+
+![image](https://user-images.githubusercontent.com/70821575/229498479-3115a169-924e-4b48-86e0-df7118471b63.png)<br>
+### **Fill the form:**<br>
+![image](https://user-images.githubusercontent.com/70821575/229498591-8db7fe29-5c62-4d12-978f-0457d0b40d97.png)<br>
+### **After Click Book Now button:**<br>
+![image](https://user-images.githubusercontent.com/70821575/229498638-0360adc1-f0e9-4a1d-8ca1-d2f501ae5f9d.png)<br>
+### **After clicking Book button on the cabs section:**<br>
+![image](https://user-images.githubusercontent.com/70821575/229498680-1559c703-483b-44eb-b6c0-a7ca762acce1.png)
+
+
